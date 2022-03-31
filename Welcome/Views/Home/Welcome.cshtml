@@ -6,7 +6,9 @@
 <h1>Welcome</h1>
 
 @{
-    String zone = TimeZone.CurrentTimeZone.StandardName;
+    String zone = TimeZone.CurrentTimeZone.StandardName; 
+    String zoneDST = TimeZone.CurrentTimeZone.DaylightName; 
 }
 
 <h2>@ViewBag.Message @zone</h2>
+<h2>TimeZone DST @zoneDST</h2>
